@@ -1,0 +1,63 @@
+* {
+    font-family: po;
+}
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 10px;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+:root {
+    --bg-white: #fff;
+    --light-gray: #FAFAFA;
+    --gray: #BEBEBE;
+    --heading-color: #1F1F1F;
+    --black-text-color: #000000;
+    --grient: url(../../../AppData/Local/Temp/Rar\$DRa2828.14273/vuesax/linear/messages2.png);
+    --font-poppins: poppins;
+}
+h1 {
+    font-family: var(--font-poppins);
+    color: var(--black-text-color);
+    font-size: 6.7rem;
+    font-weight: 600;
+    line-height: 8rem;
+}
+
+h2 {
+    font-family: var(--font-poppins);
+    color: var(--black-text-color);
+    font-weight: 600;
+    font-size: 5rem;
+    Line-height: 6rem;
+}
+
+h3 {
+    font-family: var(--font-poppins);
+    color: var(--black-text-color);
+    font-weight: 600;
+    font-size: 3.3rem;
+    Line-height: 2.8rem;
+}
+
+h4 {
+    font-family: var(--font-poppins);
+    color: var(--black-text-color);
+    font-weight: 600;
+    font-size: 2.1rem;
+    Line-height: 2.5rem;
+}
+
+p {
+    font-family: var(--font-poppins);
+    color: var(--black-text-color);
+    font-weight: 00;
+    font-size: 1.6rem;
+    Line-height: 2.4rem;
+}
+section {
+    box-sizing: border-box;
+    padding: 5rem 0;
+}
