@@ -9,7 +9,9 @@ body {
     font-weight: 400;
     scroll-behavior: smooth;
 }
+
 :root {
+    --bb: 1px solid aqua;
     --bg-white: #fff;
     --light-gray: #FAFAFA;
     --gray: #BEBEBE;
@@ -77,11 +79,12 @@ button {
 }
 
 section {
-    box-sizing: border-box;
-    padding: 5rem 0;
+    padding: 6rem 0;
+    width: 128rem;
+    margin: 0 auto;
 }
 
-header {
+.full-nav {
     width: 100%;
     height: 9rem;
     background-color: var(--bg-white);
@@ -91,7 +94,7 @@ header {
 }
 
 .header-main {
-    width: 96%;
+    width: 128rem;
     height: 9rem;
     background-color: var(--light-gray);
     border-radius: 70px;
@@ -143,7 +146,7 @@ header {
 
 
 .hero-section {
-    width: 96%;
+    width: 100%;
     height: 61.7rem;
     background: rgb(193,222,232);
     background: linear-gradient(90deg, rgba(193,222,232,1) 0%, rgba(251,217,185,1) 73%);
@@ -176,26 +179,24 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 0 8rem 0;
 }
-.icon-sec {
-    width: 96%;
-    margin: 0 auto;
+.features-sec {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
-
-.features-sec {
-    padding: 5rem 5rem;
-    width: 45rem;
+.features {
+    width: 100%;
+    /* margin-top: 1rem; */
+    padding: 5rem 5rem  0 5rem;
+}
+.features-box {
+    width: 35rem;
     display: flex;
     flex-direction: column;
-    gap: 3.2rem;
+    gap: 4.2rem;
 }
-.features-sec img {
-    width: 50%;
-    color: blue;
-}
-
 .features-icon1 span {
     font-size: 5rem;
     color: #58BF52;
@@ -208,38 +209,34 @@ header {
     font-size: 5rem;
     color: #3741B5;
 }
-
-.project-text h2,
-.project-text p {
-    padding: 0 0 2.4rem 5rem;
-
-
+.project-sec {
+    width: 100%;
 }
-
+.project-text {
+    padding: 0 0 5rem 5rem;
+}
 .project-carts {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 2.4rem;
+    justify-content: space-between;
 }
 .card {
-    width: 25%;
     overflow: hidden;
     border-radius: 14px;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
 }
-.card-img-top {
+.card-img {
     width: 100%;
-    background: rgb(193,222,232);
-    background: linear-gradient(165deg, rgba(193,222,232,1) 0%, rgba(251,217,185,1) 73%);
 }
 .card-body h4,
 .card-body p,
 .card-body img {
     padding-bottom: 1.6rem;
 }
+
+
 .agent-text {
     display: flex;
     flex-direction: column;
@@ -248,7 +245,7 @@ header {
 
 .agent-container {
     padding-top: 3.4rem;
-    width: 96%;
+    width: 100%;
     height: 57.7rem;
     margin: 0 auto;
     display: flex;
@@ -306,8 +303,10 @@ header {
 }
 
 footer {
+    width: 128rem;
+    margin: 5rem 0;
+    margin: 0 auto;
     margin: 20.6rem auto 0 auto;
-    width: 96%;
     height: 45.7rem;
     background: rgb(193,222,232);
     background: linear-gradient(90deg, rgba(193,222,232,1) 0%, rgba(251,217,185,1) 73%);
@@ -322,7 +321,6 @@ footer {
     gap: 2.4rem;
     justify-content: center;
     padding-left: 2.4rem;
-    border:  .1rem solid black;
 }
 .input-box {
     width: 46.9rem;
@@ -338,6 +336,7 @@ footer {
    padding-left: 2.4rem;
    font-size: 1.6rem;
 }
+
 
 .footer-left p {
     width: 52.6rem;
@@ -361,10 +360,10 @@ footer {
 }
 .footer-right {
     width: 50%;
-    border: 1px solid red;
+    position: relative;
 }
 .footer-right img {
-    width: 40%;
+    width: 80%;
     position: absolute;
     right: 0;
 }
