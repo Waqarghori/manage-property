@@ -422,7 +422,32 @@ footer {
 }
 
 
-@media only screen and (max-width: 1200px) {
-
-
+@media only screen and (max-width: 1280px) {
+    .header-main {
+        max-width: 115.2rem;
+    }
 }
+
+@media only screen and (max-width: 1200px) {
+    .header-main {
+        max-width: 99.2rem;
+    }   
+}
+
+/* Medium devices (Small desktops) */
+@media only screen and (max-width: 992px) {
+    .header-main {
+        max-width: 76.8rem;
+    }
+}
+
+/* Small devices (Tablets) */
+@media only screen and (max-width: 768px) {
+    .header-main {
+        width: 100%;
+        border-radius: 0px;
+    }
+}
+
+/* Extra Small (Mobile devices) */
+@media only screen and (max-width: 576px) {}
