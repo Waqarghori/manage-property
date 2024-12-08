@@ -507,7 +507,7 @@ font-size: 1.6rem;
     .input-box input,
     .hero-left input {
     width: 21.9rem;
-    font-size: 1.2rem;;
+    font-size: 1.2rem;
     }
 
     .features-sec {
@@ -680,6 +680,9 @@ font-size: 1.6rem;
     .hero-left {
         text-align: center;
         padding: 0;
+    }
+    .input-box {
+        margin: 0 auto;
     }
     .features-sec {
         gap: 2.4rem;
