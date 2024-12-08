@@ -95,7 +95,6 @@ section {
 }
 
 .header-main {
-    width: inherit;
     max-width: 128rem;
     height: 9rem;
     background-color: var(--light-gray);
@@ -230,9 +229,11 @@ section {
     display: flex;
     justify-content: space-between;
 }
-
+.icon-sec {
+    width: 100%;
+}
 .features-box {
-    width: 35rem;
+    width: 25%;
     display: flex;
     flex-direction: column;
     gap: 4.2rem;
@@ -345,7 +346,9 @@ section {
     gap: 2.4rem;
 }
 .agent-box {
-    width: 11.4rem;
+    box-sizing: border-box;
+    border: 1px solid red;
+    width: 20%;
     height: 8rem;
 }
 
@@ -374,22 +377,21 @@ footer {
     width: 46.9rem;
     position: relative;
 }
-.input-box input {
-    background-color: var(--bg-white);
-   width: 46.9rem;
-   height: 6rem;
-   border-radius: 40rem;
-   outline: none;
-   border: 0.2rem solid var(--gray);
-   padding-left: 2.4rem;
-   font-size: 1.6rem;
-}
-
-
 .footer-left p {
     width: 52.6rem;
     height: 9.6rem;
 }
+.input-box input {
+background-color: var(--bg-white);
+width: 46.9rem;
+height: 6rem;
+border-radius: 40rem;
+outline: none;
+border: 0.2rem solid var(--gray);
+padding-left: 2.4rem;
+font-size: 1.6rem;
+}
+
 .footer-left .btn {
     display: flex;
     justify-content: center;
@@ -414,12 +416,19 @@ footer {
     position: absolute;
     right: 0;
     bottom: -30;
-    border: 1px solid red;
 }
 .footer-right img {
     width: 80%;
 }
 
+
+
+
+
+
+
+
+     /* Meadia Queries*/
 
 @media only screen and (max-width: 1280px) {
     .header-main,
@@ -478,6 +487,7 @@ footer {
         background: rgb(251,217,185);
         background: radial-gradient(circle, rgba(251,217,185,1) 0%, rgba(193,222,232,1) 73%);
     }
+
     .header-right {
         display: none;
     }
@@ -507,7 +517,7 @@ footer {
     }
     .footer-left p
     {
-        width: 35rem;
+        height: 30rem
     }
 
     .footer-pic img {
@@ -525,36 +535,95 @@ footer {
         font-size: 3.7rem
     }
     h2 {
-        font-size: 4rem;
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 2.5rem;
     }
     .hero-section{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 72rem;
+        height: 90rem;
     }
-    /* .hero-right {
+    .hero-left  {
+        width: 100%;
+    }
+    .hero-right {
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
-    } */
+    } 
     .hero-right img {
         width: 100%;
-        right: 0;
     }
+    .hero-right {
+        width: 100%;
+        border: 1px solid red;
+    }
+    .features-sec {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+    }
+    .features-box {
+        text-align: center;
+        width: 50%;
+        gap: 1.2rem;
+    }
+    .project-carts {
+        width: 90%;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 2.4rem;
+    }
+    .card {
+        width: 100%;
+\    }
     footer {
         flex-direction: column;
+        height: 95rem;
+        padding: 6.4rem 0 0 0;
     }
-    .features,
-    .project-sec,
-    .agent-container,
-    html {
-        padding: 0;
-        margin: 0 auto;
-    }
+ 
+    .input-box input,
+    .hero-left input {
+    width: 100%;
+    font-size: 1.6em;;
+    } 
+    .hero-left .btn,
+    .footer-left .btn {
+        width: 100%;
+        font-size: 2.4rem;
+        position: unset;
+        width: 100%;
+        margin: 1.6rem 0 0 0;
+    } 
+    .input-box {
+        width: 90%;
+     }
 
-} 
+     .footer-left {
+        align-items: center;
+        width: 100%;
+        height: 35%;
+
+     }
+     .footer-right {
+        height: 50%;
+        width: 100%;
+     }
+     .footer-pic {
+        width: 100%;
+        position: unset;
+     }
+     .footer-pic img {
+        width: 100%;
+     }
+    } 
 
 
 
