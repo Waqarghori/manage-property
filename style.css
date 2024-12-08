@@ -347,7 +347,6 @@ section {
 }
 .agent-box {
     box-sizing: border-box;
-    border: 1px solid red;
     width: 20%;
     height: 8rem;
 }
@@ -560,7 +559,9 @@ font-size: 1.6rem;
     }
     .hero-right {
         width: 100%;
-        border: 1px solid red;
+    }
+    .features-text {
+        padding: 0 0 0 5rem;
     }
     .features-sec {
         width: 100%;
@@ -582,7 +583,18 @@ font-size: 1.6rem;
     }
     .card {
         width: 100%;
-\    }
+    }
+    .agent-left {
+        width: 100%;
+    }
+    .agent-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .agent-right {
+        display: none;
+    }
     footer {
         flex-direction: column;
         height: 95rem;
