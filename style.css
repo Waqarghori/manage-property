@@ -677,15 +677,23 @@ font-size: 1.6rem;
     .agent-sec {
         width: 100%;
     }
-    .agent-left p {
+    .footer-left {
         width: 100%;
     }
     .agent-detail {
         width: 100%;
     }
     .footer-left p {
-        text-align: center;
-        width: 90%;
+        width: 100%;
+    }
+    footer {
+        height: 75rem;
+    }
+    .footer-left {
+        height: 50%;
+    }
+    .footer-right {
+        height: 120%;
     }
 }
 
