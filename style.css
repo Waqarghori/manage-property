@@ -484,8 +484,10 @@ font-size: 1.6rem;
     }
     .header-main .navbar-nav {
         border-radius: 15px;
-        background: rgb(251,217,185);
+        /* background: rgb(251,217,185);
         background: radial-gradient(circle, rgba(251,217,185,1) 0%, rgba(193,222,232,1) 73%);
+         */
+        border: 2px solid #c1dee8;
     }
 
     .header-right {
